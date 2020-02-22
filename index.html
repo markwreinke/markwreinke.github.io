@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <style>
   html {
-    background-color: ivory;
-      background-image: url('hackysu2019.jpg');
+      background-color: ivory;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover ;
+      animation-name: slideShow;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+
   }
   header {
+      margin: 20%;
 
   }
   h1 {
     font-size: 27px;
     text-align: center;
+    padding: 5%
   }
-  body {
-    background-color: rgba(255, 255, 240, 0.5);
-  }
+
   #navigationBar {
-    text-align: center;
-    background-color: lightsteelblue;
-    height: 25px;
+    background-color: rgba(176, 196, 222, 0.5);
   }
+
+    #websitePortal {
+        background-color: rgba(255, 255, 240, 1);
+        position: absolute;
+        left: 30%;
+        height: 30%;
+        width: 35%;
+    }
+
+    @keyframes slideShow{
+        0%{
+            background-image: url('hackysu2019.jpg');
+        }
+        49%{
+            background-image: url('hackysu2019.jpg');
+        }
+        50% {
+            background-image: url('2017-11-13.jpg');
+        }
+        99% {
+            background-image: url('2017-11-13.jpg');
+        }
+        100%{
+            background-image: url('hackysu2019.jpg');
+        }
+    }
 </style>
 
 
 <html lang="en">
 <header>
-  <h1>Mark W. Reinke</h1><hr>
-  <div id="navigationBar">
-    <a href="#navigationBar" style="padding: 5px 5px 5px 5px">Home</a>
-    <a href="#" style="padding: 5px 5px 5px 5px">Computer Science</a>
-    <a href="#" style="padding: 5px 5px 5px 5px">Music</a>
+  <div id="websitePortal">
+      <h1>Mark W. Reinke</h1><hr>
+      <div id="navigationBar">
+        <a href="#navigationBar" style="padding: 5px 5px 5px 5px">Home</a>
+        <a href="#" style="padding: 5px 5px 5px 5px">Computer Science</a>
+        <a href="#" style="padding: 5px 5px 5px 5px">Music</a>
+      </div>
   </div>
-</header>
 
+</header>
+<!--
 <body>
     <p>Please excuse the minimalism, I hope to turn this into my personal website as I learn more about web development!</p>
     <h2> Education: </h2>
     <p>I am a student at Youngstown State University, working on a dual degree in Computer Science (BS), Music Performance with Emphasis on Music Recording (BM) and a Mathematics minor.I am in my fifth year, and hope to graduate in December of 2020.</p>
   </body>
+
+  -->
 </html>
